@@ -1,0 +1,24 @@
+{
+  "name": "imgshare",
+  "version": "1.0.0",
+  "description": "Social website of images",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "author": "wizardx",
+  "license": "ISC",
+  "dependencies": {
+    "errorhandler": "^1.5.1",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "fs-extra": "^8.1.0",
+    "md5": "^2.2.1",
+    "mongoose": "^5.8.3",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.1"
+  }
+}
