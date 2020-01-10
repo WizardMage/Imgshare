@@ -3,14 +3,14 @@ const exphbs = require('express-handlebars');
 const morgan = require('morgan');
 const multer = require('multer');
 const express = require('express');
-const routes = require('../routes/index');
+const routes = require('../routes');
 const errorHandler = require('errorhandler');
 
 module.exports = app => {
 
     //Settings
     app.set('port', process.env.PORT || 3000);
-    app.set('views',path.join(__dirname, 'views'));
+    app.set('views', path.join(__dirname, '../views'));
     app.engine('.hbs', exphbs({
         defaultLayout: 'main',
         layoutsDir: path.join(app.get('views'), 'layouts'),
@@ -23,7 +23,7 @@ module.exports = app => {
     
     //Middleware
     app.use(morgan('dev'));
-    app.use(multer({ dest: '../public/upload/temp' }).single('image'));
+    app.use(multer({ dest: path.join(__dirname, '../public/upload/temp') }).single('image'));
     app.use(express.urlencoded({ extended: false }));
     app.use(express.json());
 
