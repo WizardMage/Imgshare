@@ -9,7 +9,7 @@
 
     <!-- BOOTSTRAP 4 -->
     <link rel="stylesheet" href="/public/bootstrap-4.3.1\bootstrap.min.css">
-    <!-- Fontawesome -->
+    <!-- FONTAWESOME -->
     <link rel="stylesheet" href="/public\fontawesome-free-5.12.0-web\css\all.css">
     <!-- CSS -->
     <link rel="stylesheet" href="/public/css/style.css">
@@ -32,14 +32,18 @@
                 {{{ body }}}
             </div>
             <div class="col-md-4">
-                
+                {{> stats }}
+                {{> popular }}
+                {{> comments }}
             </div>
         </div>
     </div>
-
+    <!-- SCRIPTS -->
     <script src="/public/jquery/jquery.min.js"></script>
     <script src="/public/popper.js/popper.min.js"></script>
     <script src="/public/bootstrap-4.3.1/bootstrap.min.js"></script>
+    <!-- CUSTOM SCRIPTS -->
+    <script src="/public/js/scripts.js"></script>
 </body>
 
 </html>
