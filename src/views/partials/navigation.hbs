@@ -1,0 +1,15 @@
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container">
+        <a href="/" class="navbar-brand">
+            <img src="/public/img/logo2.png" alt="Logo" class="logo">
+        </a>
+        <ul class="navbar-nav ml-auto">
+            {{#if user}}
+            <a href="/logout" class="nav-link">Logout</a>
+            {{else}}
+            <a href="/signin" class="nav-link">SignIn</a>
+            <a href="/signup" class="nav-link">SignUp</a>
+            {{/if}}
+        </ul>
+    </div>
+</nav>

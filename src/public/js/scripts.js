@@ -1,3 +1,4 @@
+//AJAX con Jquery
 /* $('#btn-like').click(function (e){
     e.preventDefault();
     let imgId = $(this).data('id');

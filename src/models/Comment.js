@@ -12,7 +12,7 @@ const CommentSchema = new Schema({
 
 /* CommentSchema.virtual('image')
     .set(function (image) {
-        this._image = image;
+        this._image = image
     })
     .get(function () {
         return this.image

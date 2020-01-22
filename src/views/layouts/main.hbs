@@ -18,17 +18,12 @@
 
 <body>
 
-    <nav class="navbar navbar-dark bg-dark">
-        <div class="container">
-            <a href="/" class="navbar-brand">
-                <img src="/public/img/logo2.png" alt="Logo" class="logo">
-            </a>
-        </div>
-    </nav>
-    
+    {{> navigation }}
+
     <div class="container p-4">
         <div class="row">
             <div class="col-md-8">
+                {{> messages }}
                 {{{ body }}}
             </div>
             <div class="col-md-4">
@@ -38,6 +33,7 @@
             </div>
         </div>
     </div>
+
     <!-- SCRIPTS -->
     <script src="/public/jquery/jquery.min.js"></script>
     <script src="/public/popper.js/popper.min.js"></script>
